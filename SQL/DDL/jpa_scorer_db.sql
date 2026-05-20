@@ -176,9 +176,9 @@ CREATE TABLE `jpa_scorer_db`.`t_game_action` (
     `update_user_id` VARCHAR(20) COMMENT '更新ユーザID',
     `update_kino_id` VARCHAR(20) COMMENT '更新機能ID',
     `revision` INT COMMENT 'リビジョン',
-    PRIMARY KEY (`match_id`, `game_no`)
+    PRIMARY KEY (`match_id`, `game_no`, `action_no`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='対戦アクション';
--- 
+
 -- DROP TABLE IF EXISTS `jpa_scorer_db`.``;
 -- CREATE TABLE `jpa_scorer_db`.`` (
 --     ``  COMMENT '',
